@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book list app</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <div class="container">
+          <h1 > BOOK- LIST- APP</h1>
+          <form  id="book-form">
+              <div class="form-group">
+                  <label for="title">TITLE</label>
+                  <input type="text" id="title" class="form-control" placeholder="TITLE/NAME OF BOOK"/>
+              </div>
+
+              <div class="form-group">    
+
+                <label for="author">AUTHOR</label>
+                <input type="text" id="author" class="form-control" placeholder="NAME OF AUTHOR"/>
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="form-control" placeholder="ISBN/BOOK NUMBER"/>
+            </div>
+
+            <input type="button" value="ADD BOOK" id="btn">
+             <button id="cancel"onclick="del()">CANCEL</button>
+          </form>
+
+          <table class="table table-striped mt-5" >
+              <thead>
+                  <tr>
+                      <th>TITLE</th>
+                      <th>AUTHOR</th>
+                      <th>ISBN</th>
+                       
+                  </tr>
+              </thead>
+
+              <tbody id="book-list">
+                   
+              </tbody>
+
+          </table>
+      </div>
+
+
+
+      
+      <script src="./joel.js"></script>
+</body>
+</html>
